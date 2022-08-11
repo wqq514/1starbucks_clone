@@ -66,13 +66,106 @@ header{
 	padding:.5rem 1rem;
 	margin:.5rem 0 0 0;
 	display: block;
+	color:#333;
 }
-
-
-
-
-
-
+.post-it{
+	position: fixed;
+	width:140px;
+	height: 214px;
+	top:200px;
+	right:3%;
+}
+.beverage{
+	display: flex;
+	justify-content: center;
+	height: 650px;
+	column-gap: 2rem;
+}
+.b1{
+	align-self: center;		/* self 하나만 적용 */
+}
+.more{
+	border:2px solid white;
+	border-radius: 3px;
+	color:white;
+	width:35%;
+	margin:2rem auto;
+	text-align: center;
+	padding:.5rem;
+}
+.more:hover{
+	background: white;
+	text-decoration: underline;
+	color:yellowgreen;
+	transition:all .3s ease-in-out;
+}
+.b2{
+	margin-top: 3rem;
+}
+.b3{
+	align-self: center;
+}
+.b4{
+	padding-top:3rem;
+}
+.promtion{
+	
+}
+.promo-bg{
+	display: flex;
+	height:700px;
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	top:0;
+}
+.left-bg{
+	background: yellowgreen;
+	flex:5.5;
+}
+.right-bg{
+	background: skyblue;
+	flex:4.5;
+}
+.notice{
+	display: flex;
+	height: 50px;
+	overflow: hidden;
+}
+.news-area{
+	flex:5.5;
+	background: black;
+	color:white;
+}
+.area-items{
+	display: flex;
+	float:right;
+}
+.area-items h2{
+	font-size: 1rem;
+}
+.area-items button{
+	width:30px;
+	height: 30px;
+	background: none;
+	border:1px solid #ccc;
+	border-radius: 50%;
+	color:#ccc;
+}
+.area-items ul{
+	overflow: hidden;
+}
+.area-items ul li{
+	margin:30px 0;
+}
+.promo-area{
+	flex:4.5;
+	background: #f2f2f2;
+}
+.promo-items{
+	display: flex;
+	float:left;
+}
 
 
 
