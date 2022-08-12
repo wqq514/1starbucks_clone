@@ -4,8 +4,10 @@
 	margin:0;
 	padding:0;
 }
+html{font-size:20px;} 	/* 생략하면 16px */
 body{
 	color:#333;
+	font-size:1rem;
 }
 ul{
 	list-style: none;
@@ -25,7 +27,7 @@ header{
 	margin:0 auto;
 	display: flex;
 	justify-content: space-between;
-	padding:0 
+	padding:0; 
 }
 .site-logo{
 	padding:1.35rem;
@@ -34,6 +36,7 @@ header{
 	margin:1rem 0;
 	font-size:13px;
 	align-items: center;
+	justify-content: center;
 }
 .nav-top a:hover{
 	text-decoration: underline;
@@ -77,9 +80,8 @@ header{
 .nav-bottom a{
 	/* text-transform: uppercase; 전부 다 대문자 */
 	padding:.5rem 1rem;
-	margin:.5rem 0 0 0;
 	display: block;
-
+	font-size:16px;
 }
 .post-it{
 	position: fixed;
@@ -91,7 +93,7 @@ header{
 .beverage{
 	display: flex;
 	justify-content: center;
-	height: 650px;
+	height: 577px;
 	column-gap: 2rem;
 }
 .b1{
@@ -105,6 +107,7 @@ header{
 	margin:2rem auto;
 	text-align: center;
 	padding:.5rem;
+	font-size:.8rem;
 }
 .more:hover{
 	background: white;
@@ -120,9 +123,6 @@ header{
 }
 .b4{
 	padding-top:3rem;
-}
-.promtion{
-	
 }
 .promo-bg{
 	display: flex;
@@ -152,24 +152,29 @@ header{
 }
 .area-items{
 	display: flex;
+	align-items:center;
 	float:right;
 }
 .area-items h2{
 	font-size: 1rem;
 }
 .area-items button{
-	width:30px;
-	height: 30px;
+	margin: 0 1rem 0 0;
+	font-size:1.25rem;
+	width:36px;
+	height: 36px;
 	background: none;
 	border:1px solid #ccc;
 	border-radius: 50%;
 	color:#ccc;
 }
 .area-items ul{
+	margin: 0 0 0 1rem;
+	height:50px;
 	overflow: hidden;
 }
 .area-items ul li{
-	margin:30px 0;
+	margin:15px 0;
 }
 .promo-area{
 	flex:4.5;
@@ -177,7 +182,124 @@ header{
 }
 .promo-items{
 	display: flex;
+	align-items:center;
+	margin:10px 0 0 5rem;	/* 기본값 : 16px */
 	float:left;
+}
+.promo-items h2{
+	font-size: 1rem;
+	margin:0 4rem 0 0;
+}
+.promo-items button{
+	border:0;
+	background: none;
+	width:30px;
+	height: 30px;
+}
+
+.benefit{
+	background: #1e3932;
+	color:white;
+	font-size:.875rem;
+}
+.benefit .wrap{
+	column-gap: 1.8rem;
+}
+.reward-logo{
+	flex:1;
+}
+.reward-details{
+	flex:4;
+}
+.membership{
+	position: relative;
+	border-bottom: 1px solid #4b615b;
+	padding-bottom:1rem;
+	margin-bottom:1rem;
+	margin-top:1rem;
+}
+.membership p{
+	letter-spacing: -1px;	/* 자간 */
+}
+.membership p:nth-child(1){
+	margin-bottom: 1rem;
+}
+.membership p:nth-child(2){
+	font-size:.875rem;
+}
+.membership p:nth-child(3){
+	font-size:.875rem;
+}
+.btns{
+	display:flex;
+	position: absolute;
+	right:0;
+	bottom:2rem;
+	font-size:.725rem;
+	column-gap: 1rem;
+}
+.btns li:nth-child(1) a{
+	color:white;
+	border:2px solid #00704a;
+	background: #00704a;
+	padding:.6rem 1rem;
+	border-radius: .15rem;
+}
+.btns li:nth-child(2) a{
+	color:white;
+	border:2px solid white;
+	padding:.6rem 1rem;
+	border-radius: .15rem;
+}
+.giftcard{
+	position: relative;
+}
+.giftcard p{
+	font-size:.7rem;	/* 20px 기준에서 14px로 단위 환산 */
+	letter-spacing:-1px;
+}
+.gift-button{
+	position: absolute;
+	right:0;
+	top:.5rem;
+}
+.gift-button a{
+	color:white;
+	border:2px solid white;
+	font-size:.725rem;
+	padding:.6rem 1.7rem;
+	border-radius: .15rem;
+}
+.new-beans{
+	padding:3rem 0;
+	background: url("../images/2022_Summer2_bean_bg.jpg") no-repeat center / cover;	
+}
+.new-beans .wrap{
+	justify-content: space-between;
+}
+.beans-text{
+	color:white;
+	margin:0 1rem 0 0;
+	letter-spacing:-1px;	/* 자간 : 글자와 글자사이 간격 */
+	line-height: 1.5; 		/* 행간 : 행과 행의 간격 */
+}
+.beans-text p:nth-child(1){
+	font-size:1rem;
+	color:#f3f3f3;
+}
+.beans-text p:nth-child(2){
+	font-size:1.25rem;
+	color:#fff;
+}
+.beans-text p:nth-child(3){
+	font-size:.825rem;
+	color:#efefef;
+}
+.beans-text .more{			/* p.more(종속),  p .more */
+	margin:1rem 0;
+}
+.beans-text .more:hover{
+	color:#00704a;
 }
 
 
@@ -186,6 +308,11 @@ header{
 
 
 
+
+
+@media screen and (max-width: 480px){
+	html{font-size:16px;}
+}
 
 
 
